@@ -40,7 +40,6 @@ ENV TERM dumb
 
 RUN rm -rf /var/www/html/index.html
 COPY ./app/ /var/www/html
-COPY xsslabs.tar.gz /var/www/html
 RUN tar -xzf /var/www/html/xsslabs.tar.gz -C /var/www/html
 RUN rm -rf /var/www/html/xsslabs.tar.gz
 COPY run.sh /usr/sbin/
